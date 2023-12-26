@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_map_type"
+        android:title="Tipo de Mapa">
+        <menu>
+            <item
+                android:id="@+id/menu_map_type_normal"
+                android:title="Mapa Normal" />
+            <item
+                android:id="@+id/menu_map_type_satellite"
+                android:title="Satelital" />
+            <item
+                android:id="@+id/menu_map_type_terrain"
+                android:title="Terreno" />
+            <item
+                android:id="@+id/menu_map_type_hybrid"
+                android:title="Híbrido" />
+            <!-- Agrega más tipos de mapas según tus necesidades -->
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_add_marker"
+        android:title="Añadir Marcador" />
+</menu>

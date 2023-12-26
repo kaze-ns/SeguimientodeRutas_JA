@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Vista.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/ruta_mapa"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/aclonica"
+        android:text="Menu Principal"
+        android:textColor="@color/black"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Detalles"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnListas"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/btnListas"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Historial"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/Mapabtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/Mapabtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:fontFamily="sans-serif-black"
+        android:padding="20dp"
+        android:text="Mapa de Ubicacion"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.DetallesRutaActivity">
+
+    <TextView
+        android:id="@+id/textViewDistancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia: "
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duración: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewDistancia"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewResumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen: "
+        android:textSize="18sp"
+        android:layout_below="@id/textViewDuracion"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Agrega estos EditText para ingresar nuevos valores -->
+    <EditText
+        android:id="@+id/editTextNuevaDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewResumen"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nueva Distancia" />
+
+    <EditText
+        android:id="@+id/editTextNuevaDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nueva Duración"
+        android:layout_below="@id/editTextNuevaDistancia"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!-- Agrega estos botones para agregar y modificar -->
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        android:layout_below="@id/editTextNuevaDuracion"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onModificarClick" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:layout_below="@id/btnModificar"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onAgregarClick" />
+
+</RelativeLayout>

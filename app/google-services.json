@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087347540942",
+    "project_id": "seguimientoderutas-331c9",
+    "storage_bucket": "seguimientoderutas-331c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087347540942:android:7d0836df8fa39ef2ed619f",
+        "android_client_info": {
+          "package_name": "com.example.seguimientoderutas_ja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaTFLs-Lm3-GzKuloSZSHWbTiyGt2OW3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SeguimientodeRutas_JA</string>
+    <string name="hint_latitud">Latitud</string>
+    <string name="hint_longitud">Longitud</string>
+</resources>
